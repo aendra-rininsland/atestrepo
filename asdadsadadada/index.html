@@ -9,7 +9,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
     <script type="text/javascript">
       (function(){
-        d3.xhr('https://cdn.rawgit.com/aendrew/atestrepo/06107f537a561cc7b47bc6bec3d3948a11199dfb/asdadsadadada/axis.json', 'text/plain', function(err, res){
+        d3.xhr('https://cdn.rawgit.com/aendrew/atestrepo/3bb7dfb631475bb5fb52a4a4a0b7c0dec325d06d/asdadsadadada/axis.json', 'text/plain', function(err, res){
           var config = JSON.parse(res.responseText);
           // If you can figure out how to do this better, please talk to @aendrew.
           config.axis.x.tick.format = function (b){return'series'===config.chartGlobalType&&'category'!==config.axis.x.type?config.axis.x.prefix+b.toFixed(config.axis.x.accuracy).toString()+config.axis.x.suffix:b;};
